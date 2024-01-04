@@ -1,4 +1,4 @@
-import { Center, Image, Text, VStack } from "native-base";
+import { Center, Heading, Image, Text, VStack } from "native-base";
 
 import logoImg from "../../assets/logo.png";
 import { Input } from "@components/Input";
@@ -18,9 +18,9 @@ export function SignIn() {
         roundedBottomRight="3xl"
       >
         <Image source={logoImg} alt="brand" />
-        <Text color="gray.100" fontSize="xl" fontWeight="bold" mt={2}>
+        <Heading color="gray.100" fontSize="xl" fontWeight="bold" mt={2}>
           marketspace
-        </Text>
+        </Heading>
         <Text fontFamily="mono" color="gray.300" fontSize="sm">
           Seu espaço de compra e venda
         </Text>
@@ -35,12 +35,12 @@ export function SignIn() {
           </Text>
           <Input placeholder="E-mail" />
           <Input placeholder="Senha" />
-          <Button mt={4} />
+          <Button mt={4} title="Entrar" />
         </VStack>
       </VStack>
-      <VStack px={12} mt="56px">
+      <VStack px={12} mt="76px">
         <Text textAlign="center">Ainda não tem acesso?</Text>
-        <Button mt={4} />
+        <Button mt={4} variant="outline" title="Criar uma conta" />
       </VStack>
     </VStack>
   );
